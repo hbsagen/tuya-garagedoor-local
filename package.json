@@ -1,0 +1,35 @@
+{
+  "name": "homebridge-tuya-garage",
+  "version": "1.0.1",
+  "description": "A Homebridge accessory plugin for local Tuya garage door control using tinytuya.",
+  "main": "index.js",
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge-accessory",
+    "tuya",
+    "tinytuya",
+    "garage",
+    "garage-door",
+    "iot"
+  ],
+  "scripts": {
+    "postinstall": "echo '📦 Reminder: Run pip3 install tinytuya to install required Python dependency.'"
+  },
+  "engines": {
+    "homebridge": "^1.6.0 || ^2.0.0-beta.0",
+    "node": "^18.20.4 || ^20.15.1 || ^22"
+  },
+  "homebridge": {
+    "pluginType": "accessory",
+    "accessory": "TuyaGarage"
+  },
+  "author": "Henning B. Sagen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hbsagen/tuya-garagedoor-local"
+  },
+  "bugs": {
+    "url": "https://github.com/hbsagen/tuya-garagedoor-local/issues"
+  }
+}
