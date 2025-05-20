@@ -14,8 +14,10 @@ module.exports = (homebridge) => {
 
 function runPython(code, callback) {
   const filename = path.join('/tmp', `temp-tuya-${Date.now()}.py`);
+  const pythonPath = path.join(__dirname, 'tuya-env/bin/python'); // Use virtualenv Python
+
   writeFileSync(filename, code);
-  exec(`python3 ${filename}`, (err, stdout) => {
+  exec(`${pythonPath} ${filename}`, (err, stdout) => {
     try { unlinkSync(filename); } catch (_) {}
     callback(err, stdout);
   });

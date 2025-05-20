@@ -1,6 +1,6 @@
 {
   "name": "homebridge-tuya-garage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Homebridge accessory plugin for local Tuya garage door control using tinytuya.",
   "main": "index.js",
   "keywords": [
